@@ -8,6 +8,7 @@ import Thumb from './Thumb';
 import Spinner from './Spinner';
 import SearchBar from './SearchBar';
 import Button from './Button';
+import Footer from './Footer';
 // Image
 import NoImage from '../images/no_image.jpg';
 // API
@@ -96,6 +97,7 @@ class Home extends Component {
         {movies.page < movies.total_pages && !loading && (
           <Button text='Load More' callback={this.handleLoadMore} />
         )}
+        <Footer />
       </>
     );
   }
